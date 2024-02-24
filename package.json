@@ -1,6 +1,6 @@
 {
   "name": "davions-cipher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "keywords": [
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-      "url": "git+git@github.com:ylmin/davions-cipher.git"
+      "url": "git+https://github.com/ylmin/davions-cipher"
   },
   "description": "encrypt",
   "types": "dist/index.d.ts",
