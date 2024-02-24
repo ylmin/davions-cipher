@@ -1,0 +1,49 @@
+{
+  "name": "davions-cipher",
+  "version": "1.0.1",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "keywords": [
+    "encrypt"
+  ],
+  "repository": {
+    "type": "git",
+      "url": "git+git@github.com:ylmin/davions-cipher.git"
+  },
+  "description": "encrypt",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "start": "yarn build && node ./dist",
+    "test": "jest",
+    "test:coverage": "jest --collectCoverage",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-typescript": "^7.13.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-node-resolve": "^13.1.2",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.39",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "msw": "^0.28.1",
+    "node-fetch": "^2.6.1",
+    "ts-jest": "^26.5.4"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/js-cookie": "^2.2.6",
+    "crypto-js": "^4.1.1",
+    "js-cookie": "^2.2.1",
+    "rollup": "^2.62.0",
+    "typescript": "^4.5.4"
+  }
+}
